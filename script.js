@@ -482,7 +482,7 @@ function resetBonusGenerator() {
     document.getElementById('bonusProductUrl').value = '';
 }
 
-// Prompt Library Functions
+// Prompt Library Functions - EXPANDED WITH LEAD MAGNETS
 const prompts = {
     'blog-post': `Write a comprehensive blog post about [TOPIC]. Structure it with:
 
@@ -585,7 +585,357 @@ Create 3 variations:
 2. Benefit-focused approach  
 3. Social proof-focused approach
 
-Include suggested visuals and targeting recommendations. Keep copy concise and action-oriented.`
+Include suggested visuals and targeting recommendations. Keep copy concise and action-oriented.`,
+
+    // NEW LEAD MAGNET PROMPTS
+    'ebook-lead-magnet': `Create a comprehensive eBook lead magnet for [NICHE/TOPIC]. Structure:
+
+TITLE: "The Ultimate Guide to [TOPIC]: [SPECIFIC BENEFIT]"
+
+OUTLINE:
+Chapter 1: Introduction & Problem Overview
+- Define the main problem your audience faces
+- Statistics and research to support the problem
+- Promise of what they'll learn
+
+Chapter 2: Foundation Knowledge
+- Essential concepts they need to understand
+- Common myths and misconceptions
+- Framework or methodology overview
+
+Chapter 3: Step-by-Step Solution
+- Detailed action steps (5-7 steps)
+- Real examples and case studies
+- Common mistakes to avoid
+
+Chapter 4: Advanced Strategies
+- Pro tips and insider secrets
+- Tools and resources recommendations
+- Optimization techniques
+
+Chapter 5: Implementation & Next Steps
+- Action plan template
+- Success metrics to track
+- How to get continued support
+
+BONUS SECTIONS:
+- Quick reference checklist
+- Resource links and tools
+- FAQ section
+
+TARGET: 15-25 pages, highly actionable content that positions you as the expert while solving a specific problem.`,
+
+    'checklist-lead-magnet': `Create a comprehensive checklist lead magnet for [PROCESS/GOAL]. Format:
+
+TITLE: "The Complete [PROCESS] Checklist: Never Miss a Critical Step Again"
+
+INTRODUCTION:
+- Why this checklist is essential
+- How to use it effectively
+- What results to expect
+
+MAIN CHECKLIST SECTIONS:
+
+PRE-[PROCESS] PREPARATION:
+□ [Step 1 with brief explanation]
+□ [Step 2 with brief explanation]
+□ [Step 3 with brief explanation]
+□ [Continue with 5-7 preparation steps]
+
+DURING [PROCESS]:
+□ [Action step 1]
+□ [Action step 2]
+□ [Action step 3]
+□ [Continue with 8-12 action steps]
+
+POST-[PROCESS] OPTIMIZATION:
+□ [Follow-up step 1]
+□ [Follow-up step 2]
+□ [Follow-up step 3]
+□ [Continue with 3-5 optimization steps]
+
+BONUS SECTION:
+□ Pro tips for advanced users
+□ Common pitfalls to avoid
+□ Resources and tools needed
+
+Make each item actionable with clear success criteria. Include space for notes and completion dates.`,
+
+    'template-lead-magnet': `Create a valuable template lead magnet for [SPECIFIC USE CASE]. Include:
+
+TITLE: "[SPECIFIC OUTCOME] Template: Copy, Customize & Get Results"
+
+TEMPLATE COMPONENTS:
+
+1. MAIN TEMPLATE:
+- Pre-filled sections with placeholder text
+- Clear instructions for customization
+- Professional formatting and design
+- Multiple format options (Word, PDF, Google Doc)
+
+2. INSTRUCTION GUIDE:
+- Step-by-step customization process
+- Best practices for each section
+- Examples of successful implementations
+- Common mistakes to avoid
+
+3. BONUS VARIATIONS:
+- 3 different template styles/approaches
+- Industry-specific adaptations
+- Beginner vs. advanced versions
+
+4. RESOURCE SECTION:
+- Related tools and software
+- Additional templates that complement this one
+- Links to helpful articles and guides
+
+CUSTOMIZATION AREAS:
+- [Specific field 1] with guidance
+- [Specific field 2] with examples
+- [Specific field 3] with best practices
+- [Continue with 5-8 customizable sections]
+
+Ensure the template saves significant time while delivering professional results.`,
+
+    'video-series-lead-magnet': `Create a multi-part video training series lead magnet for [TOPIC]. Structure:
+
+SERIES TITLE: "[SPECIFIC OUTCOME] Video Masterclass: [TIME FRAME] to [RESULT]"
+
+VIDEO 1: Foundation & Mindset (8-10 minutes)
+- Welcome and series overview
+- Common misconceptions about [TOPIC]
+- Success mindset and expectations
+- What they'll achieve by the end
+
+VIDEO 2: Strategy & Planning (10-12 minutes)
+- Core strategy framework
+- Planning template walkthrough
+- Goal setting and metrics
+- Action step assignment
+
+VIDEO 3: Implementation Tactics (12-15 minutes)
+- Step-by-step implementation
+- Live demonstration or case study
+- Tools and resources needed
+- Troubleshooting common issues
+
+VIDEO 4: Optimization & Scaling (10-12 minutes)
+- How to improve results
+- Advanced techniques
+- Scaling strategies
+- Measuring success
+
+VIDEO 5: Next Steps & Resources (8-10 minutes)
+- Recap of key learnings
+- Implementation timeline
+- Additional resources
+- How to get continued support
+
+BONUS MATERIALS:
+- PDF workbook with exercises
+- Template downloads
+- Resource links document
+- Private Facebook group access
+
+Each video should be highly actionable with clear takeaways and next steps.`,
+
+    'quiz-lead-magnet': `Create an engaging quiz lead magnet for [NICHE/TOPIC]. Structure:
+
+QUIZ TITLE: "What's Your [SPECIFIC AREA] Style? Discover Your Personalized Path to [DESIRED OUTCOME]"
+
+QUIZ STRUCTURE:
+
+INTRODUCTION:
+- Hook: Why this quiz matters
+- What they'll discover
+- How long it takes (2-3 minutes)
+- Privacy assurance
+
+QUESTIONS (8-12 questions):
+
+Question 1: [Situation-based question]
+A) [Option A - represents personality type 1]
+B) [Option B - represents personality type 2]
+C) [Option C - represents personality type 3]
+D) [Option D - represents personality type 4]
+
+[Continue with 7-11 more questions covering different aspects]
+
+RESULT TYPES (4 distinct personalities):
+
+TYPE 1: "The [Personality Name]"
+- Description of this type
+- Strengths and challenges
+- Personalized recommendations
+- Specific action steps
+- Recommended resources
+
+TYPE 2: "The [Personality Name]"
+[Same structure as Type 1]
+
+TYPE 3: "The [Personality Name]"
+[Same structure as Type 1]
+
+TYPE 4: "The [Personality Name]"
+[Same structure as Type 1]
+
+FOLLOW-UP SEQUENCE:
+- Immediate result delivery
+- Detailed PDF report
+- Personalized email series (5 emails)
+- Product recommendations based on type
+
+Make questions engaging and results highly personalized with specific action steps.`,
+
+    'toolkit-lead-magnet': `Create a comprehensive toolkit lead magnet for [SPECIFIC GOAL/PROCESS]. Include:
+
+TOOLKIT TITLE: "The Complete [GOAL] Toolkit: Everything You Need to [SPECIFIC OUTCOME]"
+
+TOOLKIT COMPONENTS:
+
+1. PLANNING TOOLS:
+- Goal setting worksheet
+- Project timeline template
+- Budget planning spreadsheet
+- Resource allocation guide
+
+2. IMPLEMENTATION TOOLS:
+- Step-by-step checklists
+- Progress tracking sheets
+- Quality control templates
+- Troubleshooting guide
+
+3. OPTIMIZATION TOOLS:
+- Performance metrics dashboard
+- A/B testing templates
+- Improvement tracking sheets
+- ROI calculation tools
+
+4. REFERENCE MATERIALS:
+- Quick reference guides
+- Best practices cheat sheet
+- Common mistakes to avoid
+- Industry benchmarks
+
+5. BONUS RESOURCES:
+- Recommended tools and software
+- Expert interview transcripts
+- Case study examples
+- Community access information
+
+ORGANIZATION:
+- Clear folder structure
+- Numbered files for sequence
+- Master index document
+- Video walkthrough of toolkit
+
+Each tool should be immediately usable and save significant time while improving results.`,
+
+    'swipe-file-lead-magnet': `Create a high-value swipe file lead magnet for [MARKETING/COPY TYPE]. Structure:
+
+SWIPE FILE TITLE: "[NUMBER]+ Proven [COPY TYPE] Templates That Convert Like Crazy"
+
+ORGANIZATION:
+
+SECTION 1: HIGH-CONVERTING HEADLINES (15-20 examples)
+- Problem/solution headlines
+- Benefit-driven headlines
+- Curiosity-gap headlines
+- Social proof headlines
+- Urgency/scarcity headlines
+
+SECTION 2: OPENING HOOKS (10-15 examples)
+- Story-based openings
+- Question-based hooks
+- Statistic/fact hooks
+- Controversial statements
+- Personal revelation hooks
+
+SECTION 3: BODY COPY FRAMEWORKS (8-10 templates)
+- AIDA framework examples
+- PAS (Problem-Agitate-Solution) templates
+- Before/After/Bridge structures
+- Features to benefits conversions
+- Objection handling scripts
+
+SECTION 4: CALL-TO-ACTION TEMPLATES (12-15 examples)
+- Urgency-based CTAs
+- Benefit-focused CTAs
+- Risk-reversal CTAs
+- Social proof CTAs
+- Curiosity-driven CTAs
+
+SECTION 5: CLOSING TECHNIQUES (8-10 examples)
+- Scarcity closers
+- Guarantee closers
+- Bonus stack closers
+- Story-based closers
+- Question-based closers
+
+BONUS SECTION:
+- Industry-specific adaptations
+- A/B testing variations
+- Performance notes for each template
+- Customization guidelines
+
+Include conversion rates and context for each example where possible.`,
+
+    'resource-guide-lead-magnet': `Create a comprehensive resource guide lead magnet for [NICHE/TOPIC]. Format:
+
+GUIDE TITLE: "The Ultimate [NICHE] Resource Guide: [NUMBER]+ Tools, Tips & Strategies for [SPECIFIC OUTCOME]"
+
+GUIDE STRUCTURE:
+
+INTRODUCTION:
+- How to use this guide effectively
+- Categories overview
+- Rating system explanation
+- Update schedule information
+
+SECTION 1: ESSENTIAL TOOLS (10-15 tools)
+For each tool include:
+- Tool name and website
+- What it does (2-3 sentences)
+- Best use cases
+- Pricing information
+- Pros and cons
+- Rating (1-5 stars)
+- Alternative options
+
+SECTION 2: LEARNING RESOURCES (8-12 resources)
+- Books (top 3-5)
+- Courses (top 3-5)
+- Podcasts (top 3-5)
+- YouTube channels (top 3-5)
+- Blogs/websites (top 5-8)
+
+SECTION 3: COMMUNITIES & NETWORKING (5-8 communities)
+- Facebook groups
+- LinkedIn groups
+- Discord servers
+- Forums
+- Local meetups
+- Conferences and events
+
+SECTION 4: FREE RESOURCES (10-15 resources)
+- Free tools and software
+- Free courses and training
+- Free templates and downloads
+- Free calculators and assessments
+
+SECTION 5: ADVANCED RESOURCES (5-8 resources)
+- Premium tools for scaling
+- Advanced training programs
+- Certification programs
+- Done-for-you services
+
+BONUS SECTION:
+- Quick start guide
+- Resource comparison charts
+- Budget-friendly alternatives
+- Mobile apps and extensions
+
+Include personal recommendations and why each resource made the list.`
 };
 
 function copyPrompt(promptKey) {
