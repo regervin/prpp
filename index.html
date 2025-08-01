@@ -16,6 +16,40 @@
         .glass { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.1); }
         .hover-lift { transition: all 0.3s ease; }
         .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        
+        /* Scroll to Top Button Styles */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+        
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+        
+        .scroll-to-top:active {
+            transform: translateY(-1px);
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -671,6 +705,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <!-- Modals -->
     <!-- Demo Modal -->
