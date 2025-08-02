@@ -21,6 +21,24 @@ function scrollToSection(sectionId) {
     }
 }
 
+// SCROLL TO TOP FUNCTIONALITY
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Show/hide scroll to top button based on scroll position
+window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
 // Generate Review Function
 function generateReview() {
     const productUrl = document.getElementById('productUrl').value;
